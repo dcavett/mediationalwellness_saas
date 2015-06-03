@@ -17,7 +17,7 @@
         <span class="icon-bar"></span>
       </button>      
       <%= link_to root_path, class: 'navbar-brand' do %>
-        <i class="fa fa-renren navbar-inverse"></i>
+        <i class="fa fa-renren fa-lg navbar-inverse"></i>
         Intervention Wellness
       <% end %>      
     </div>
@@ -32,6 +32,10 @@
 </nav>
 
 <div class="container">
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+  
   <%= yield %>
 </div>
   
