@@ -1,5 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-  before_filter :select_plan, only: :new  
+  before_filter :select_plan, only: :new 
  
 #  def create
 #    super do |resource|
@@ -10,6 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 #          else
 #            resource.save
 #          end
+#        end
 #      end
 #   end
 
@@ -17,6 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     def select_plan
       unless params[:plan] && (params[:plan] == '1' || params[:plan] == '2')
         flash[:notice] = "Please select a plan to sign up"
-        redirect_to_root_url
+        redirect_to root_url
+      end
     end
 end
