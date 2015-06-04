@@ -1,0 +1,1 @@
+//View video called "Stripe JS, in Part VI (6) of the manual for the needed javascript
