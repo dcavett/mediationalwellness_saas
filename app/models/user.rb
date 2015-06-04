@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
+  has_one :profile
   #attr_accessor :stripe_card_token
   
   #The code below should be activated if/when payment is wanted, will also need to do AddStripeCustomerTokenToUser table in db
