@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  validates :first_name, :last_name, :contact_email, :phone_number presence = true
+  #validates :first_name, :last_name, :contact_email, :phone_number presence = true
   
   def new
     # form where a user can fill out their own profile.
