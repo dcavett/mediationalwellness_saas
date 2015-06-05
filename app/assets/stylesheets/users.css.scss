@@ -1,3 +1,9 @@
+/* User's show page styles */
+.user-show-avatar {
+  height: 150px;
+  width: 150px
+}
+
 .account-type-icon {
   display: inline-block;
   width: 40px;
@@ -25,4 +31,14 @@
   h3 {
     margin-top: 0;
   }
+}
+/* Users Index Page Styles, change to Lessons Page Style */
+.user-index-avatar {
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border-radius: 25%
+}
+
+.well.white-bg {
+  background-color: white;
 }

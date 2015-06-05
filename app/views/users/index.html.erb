@@ -1,1 +1,27 @@
-List of the lesson plans
+<!-- Put Lesson Plans here -->
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <ul class="list-unstyled">
+      <%= @users.each do |user| %>
+        <% if user.profile %>
+        <li>
+          <div class="well row <%= cycle('white-bg', '') %>">
+            <div class="col-sm-4 text-center">
+              <% if user.profile.avatar %>
+                <!-- <%= link_to user do %> Remove this comment to add hyperlinks to plans -->
+                  <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar'%>
+                <% end %>
+              <% end %>              
+            </div>
+            
+            <div>              
+              <h2>Week 1</h2>              
+              <p>Statement about where to go for work</p>              
+            </div>
+        </li>  
+        <% end %>          
+      <% end %>
+    </ul>
+  </div>
+</div>
