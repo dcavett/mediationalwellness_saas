@@ -1,5 +1,16 @@
-<%= image_tag @user.profile.avatar.url %>
-<%= @user.profile.first_name %> <%= @user.profile.last_name %> <br/>
-<%= @user.profile.phone_number %> <br/>
-<%= @user.profile.contact_email %> <br/>
-<%= @user.profile.description %> <br/>
+<div class="row">
+  <div class="col-md-3 text-center">
+    <%= image_tag @user.profile.avatar.url %>
+  </div>
+  <div class="col-md-6">
+    <h1><span class="account-type-icon"><%= account_type_icon %></span> <%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+    <div class="well contact-information">
+      <h3><%= @user.profile.phone_number %></h3>
+      <h3><%= @user.profile.contact_email %></h3>
+    </div>
+    <div class="well profile-description">
+      <h3>Description</h3>
+      <%= @user.profile.description %> <br/>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.account-type-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2 px solid #2e6da4;
+  border-radius: 4px;
+  background-color: #337ab7;
+  color: white;
+  text-align: center;
+}
+
+.well.profile-description {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.well.contact-information {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  h3 {
+    margin-top: 0;
+  }
+}
