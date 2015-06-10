@@ -28,12 +28,18 @@
     </p>
   </div>
 
+  <div class="form-group">
+    <%= f.check_box :terms, label: "I agree to the Terms of the Study" %>
+    <% end %>
+  </div>
+
+<!--
   <div class="checkbox">
     <label>
       <input type='checkbox'> Agree to the Terms of the Study
     </label>
   </div>
-  
+  -->
   <div class="actions form-group">
     <%= f.submit "Sign up", class: 'btn btn-success' %>
   </div>

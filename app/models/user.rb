@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
   has_one :profile
+  validates :terms, acceptance: true
+  #validates_acceptance_of :tos_agreement, :allow_nil => false, :accept => true, :on => :create
   #attr_accessor :stripe_card_token
   
   #The code below should be activated if/when payment is wanted, will also need to do AddStripeCustomerTokenToUser table in db
