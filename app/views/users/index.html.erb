@@ -1,28 +1,59 @@
-<!-- Put Lesson Plans here -->
-
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
+  <div class="col-md-10 col-md-offset-1">
     <h1 class="text-center">Intervention Wellness Resource Page</h1>
     <ul class="list-unstyled">
-      <%= @users.each do |user| %>
-        <% if user.profile %>
-        <li>
-          <div class="well row <%= cycle('white-bg', '') %>">
-            <div class="col-sm-4 text-center">
-              <% if user.profile.avatar %>
-                <!-- <%= link_to user do %> Remove this comment to add hyperlinks to plans -->
-                  <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar'%>
-                <% end %>
-              <% end %>              
+      <li>
+        <div class="well row">
+          <h2 class="text-center"><%= link_to "Introduction", introduction_path %> and <%= link_to "Getting Started", gettingStarted_path %> Materials</h2>
+            <div class="well text-center">
+              <h4>All participants should read the intro material contained in this section before starting</h4>              
             </div>
-            
-            <div>              
-              <h2>Week 1</h2>              
-              <p>Statement about where to go for work</p>              
+        </div>
+      </li>       
+      <li>
+        <div class="well row">
+          <h2 class="text-center">Week 1 Materials</h2>
+            <div class="well text-center">
+              <h4><%= link_to "Session 1.1 Materials", week_one_path %> - Simple Awareness and Introduction to the Body Scan</h4>
             </div>
-        </li>  
-        <% end %>          
-      <% end %>
+            <div class="well text-center">
+              <h4><%= link_to "Session 1.2 Materials", week_two_path %> - Attention & the Brain, and Introduction to Sitting Meditation</h4>
+            </div>          
+        </div>
+      </li>
+      <li>
+        <div class="well row">
+          <h2 class="text-center">Week 2 Materials</h2>
+            <div class="well text-center">
+              <h4><%= link_to "Session 2.1 Materials", week_three_path %> - Dealing with Thoughts and Introduction to Yoga 1</h4>
+            </div>
+            <div class="well text-center">
+              <h4><%= link_to "Session 2.2 Materials", week_four_path %> - Stress: Responding vs Reacting, One-Minute Breathing Space, and Yoga 2</h4>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="well row">
+          <h2 class="text-center">Week 3 Materials</h2>
+            <div class="well text-center">
+              <h4><%= link_to "Session 3.1 Materials", week_five_path %> - Dealing with Difficult Emotions/Sensations and RAIN (Recognize/Accept/Investigate/Non-Identify)</h4>
+            </div>
+            <div class="well text-center">
+              <h4><%= link_to "Session 3.2 Materials", week_six_path %> - Mindfulness & Communication and Mountain & Lake Meditation</h4>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="well row">
+          <h2 class="text-center">Week 4 Materials</h2>
+            <div class="well text-center">
+              <h4><%= link_to "Session 4.1 Materials", week_seven_path %> - Mindfulness & Compassion and Lovingkindness Meditation</h4>
+            </div>
+            <div class="well text-center">
+              <h4><%= link_to "Session 4.2 Materials", week_eight_path %> - Conclusion and Developing a plan of your own</h4>
+            </div>
+        </div>
+      </li>
     </ul>
   </div>
 </div>

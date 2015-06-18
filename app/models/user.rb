@@ -4,8 +4,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :plan
+  #validates_associated :plan
   has_one :profile
-  validates :terms, acceptance: true
+  #validates_acceptance_of :terms, acceptance: true, :allow_nil => false, :accept => true, :on => :create
+  
   #validates_acceptance_of :tos_agreement, :allow_nil => false, :accept => true, :on => :create
   #attr_accessor :stripe_card_token
   

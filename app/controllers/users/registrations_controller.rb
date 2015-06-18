@@ -1,5 +1,6 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-  before_filter :select_plan, only: :new 
+  before_filter :select_plan, only: :new
+#  before_filter :configure_permitted_params
  
 #  def create
 #    super do |resource|
@@ -21,4 +22,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
         redirect_to root_url
       end
     end
+  
+#    def configure_permitted_params
+#      devise_parameter_sanitizer.for(:plan) do |u|
+#        u.permit(:full_name,
+#          :email, :password, :password_confirmation, :terms)
+#      end 
+#    end
 end

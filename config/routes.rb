@@ -8,6 +8,17 @@ Rails.application.routes.draw do
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'
+  get '/introduction' => 'pages#introduction'
+  get '/week_one' => 'pages#week_one'
+  get '/week_two' => 'pages#week_two'
+  get '/week_three' => 'pages#week_three'
+  get '/week_four' => 'pages#week_four'
+  get '/week_five' => 'pages#week_five'
+  get '/week_six' => 'pages#week_six'
+  get '/week_seven' => 'pages#week_seven'
+  get '/week_eight' => 'pages#week_eight'
+  get '/mbsrManual' => 'pages#mbsrManual'
+  get '/gettingStarted' => 'pages#gettingStarted'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
