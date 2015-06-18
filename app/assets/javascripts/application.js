@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
+var EnableSubmit = function(val) {
+  var lnk = document.getElementById("button");
+  val ? lnk.classList.remove('disabled') : lnk.classList.add('disabled');
+};
+
+var isAgreed = function() {
+  return -1 === document.getElementById("button").className.split(" ").indexOf('disabled');
+};
