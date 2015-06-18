@@ -19,6 +19,16 @@ Rails.application.routes.draw do
   get '/week_eight' => 'pages#week_eight'
   get '/mbsrManual' => 'pages#mbsrManual'
   get '/gettingStarted' => 'pages#gettingStarted'
+  get '/guidedPractice' => 'pages#guidedPractice'
+  get '/bodyScan' => 'pages#bodyScan'
+  get '/sittingMeditation' => 'pages#sittingMeditation'
+  get '/mindfulYoga1' => 'pages#mindfulYoga1'
+  get '/mindfulYoga2' => 'pages#mindfulYoga2'
+  get '/rainMeditation' => 'pages#rainMeditation'
+  get '/mountainMeditation' => 'pages#mountainMeditation'
+  get '/lakeMeditation' => 'pages#lakeMeditation'
+  get '/lovingkindness' => 'pages#lovingkindness'
+  get '/silentMeditation' => 'pages#silentMeditation'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

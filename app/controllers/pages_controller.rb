@@ -40,5 +40,37 @@ class PagesController < ApplicationController
   
   def gettingStarted
   end
+  
+  def guidedPractice
+  end
+  
+  def bodyScan
+  end
+  
+  def sittingMeditation
+  end
+  
+  def mindfulYoga1
+  end
+  
+  def mindfulYoga2
+  end
+  
+  def rainMeditation
+  end
+  
+  def mountainMeditation
+  end
+  
+  def lakeMeditation
+  end
+  
+  def lovingkindness
+  end
+  
+  def silentMeditation
+  end
+  
+  
 
 end
